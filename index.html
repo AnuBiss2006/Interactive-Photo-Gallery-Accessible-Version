@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Interactive Photo Gallery</h1>
+    <p>Move your mouse over an image or focus it with the keyboard to preview it.</p>
+
+    <div id="image" role="status" aria-live="polite">
+      Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+      <img src="images/photo1.svg" alt="Snow-capped mountains beneath a blue sky"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <img src="images/photo2.svg" alt="Orange sun setting over the ocean"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <img src="images/photo3.svg" alt="Tall green trees in a forest"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <img src="images/photo4.svg" alt="White peaks of a snowy mountain"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <img src="images/photo5.svg" alt="Blue lake surrounded by green hills"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <img src="images/photo6.svg" alt="Golden sand dunes in a desert"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
